@@ -1,0 +1,15 @@
+{
+    "manifest_version": 2,
+    "name": "Wildberries Product Page Enhancer",
+    "version": "1.0",
+    "description": "Adds a info div inside the product-page__aside class on Wildberries",
+    "icons": {
+      "48": "icons/icon-48.png"
+    },
+    "content_scripts": [{
+      "matches": ["*://www.wildberries.ru/*"],
+      "js": ["content.js"]
+    }],
+    "permissions": ["activeTab"]
+  }
+  
